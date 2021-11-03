@@ -1,0 +1,60 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Marck Script', cursive;
+    font-size: 19px;
+}
+
+img{
+    opacity: 0.3;
+    width: 100%;
+    position: absolute; /*neste caso, absoluta em relação ao body */
+    top: 0px
+}
+
+#container{
+    position: relative;
+    text-align: center;  
+}
+
+#taskList li{
+    list-style: none;
+}
+
+#taskList{
+    text-align: left;
+    display: inline-block;  
+
+}
+
+#addButton{
+    background-color: rgb(56, 189, 56);
+    border-radius: 10%;
+    padding: 10px; 
+    color: white;
+    font-weight: bold;   
+}
+
+#addButton:hover{
+    background-color: rgb(112, 255, 68);
+}
+
+#note{
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    width: 110px;
+    text-align: left;
+}
+
+#deleteButton{
+    background-color: rgb(253, 31, 1);
+    border-radius: 10%;
+    padding: 5px;
+    color: white;  
+    margin-top: 5px;
+}
+
+#deleteButton:hover{
+    background-color: rgb(190, 0, 0);
+}

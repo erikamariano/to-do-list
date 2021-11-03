@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+
+    <link rel="stylesheet" href="styleToDo.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+    <script src="scriptToDo.js"></script>
+
+    
+</head>
+<body onload="mostrarNaPag()">
+    <img src="image.jpeg" alt="Imagem de fundo - calendário de planejamento">
+
+    <div id="container">
+        <h1>To Do List</h1>
+        <h2>Planeje aqui suas atividades</h2>
+
+        <h4>O que você quer fazer:</h4>
+        <textarea name="newTask" id="newTask" cols="50" rows="2"></textarea>
+
+        <br><br>
+
+        <input id="addButton" type="submit" value="Adicionar Atividade" onclick="addLocalStorage()">
+
+        <br>
+
+        <h3>Não se esqueça:</h3>
+
+            <ul id="taskList">
+                <!-- as tasks serão add por JS -->
+            </ul>
+    
+        <div id="note">
+            Para excluir um item da lista, selecione a caixa<br>
+            <input id="deleteButton" type="submit" value="Excluir Atividade" onclick="excluir()">
+        </div>
+    </div>
+
+</body>
+</html>
